@@ -1,0 +1,22 @@
+body
+{
+  font-family: Courier, sans-serif;
+  color: black;
+  background: #FADF7F;
+  text-align: center;
+}
+
+a { color: brown; }
+a:hover{ color: red; }
+
+header
+{
+  font-family: Tahoma, serif;
+  text-align: center;
+  color: black;
+}
+
+footer
+{
+  font-family: Tahoma, sans-serif;
+}
