@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*background-color: #f4a460;*/
+    color: black;
+    width: 100%;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fcc550bb;
+}
+
+main {
+    /*background-color: #f8c366;*/
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #fffbf2;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: salmon;
+}
+
+.site-logo {
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    align-content: center;
+}
+
+.site-logo:hover {
+    background-color: black;
+    color: wheat;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin: 0 20px 0 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+}
+
+.logo-link:hover {
+    color: wheat;
+}
+
+.page-title {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.page-title-desc {
+    display: inline;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.project-list {
+    margin-top: 15px;
+}
+
+.project {
+    padding: 5px;
+}
+
+.project-title {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    padding: 10px;
+}
+
+.project-title:hover {
+    background-color: #111111;
+}
+
+.project-popup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+    padding-bottom: 8.5rem;
+    transition: all 500ms;
+    z-index: 5;
+}
+
+.project-popup:target {
+    visibility: visible;
+    opacity: .95;
+}
+
+.project-card {
+    position: absolute;
+    background-color: white;
+    width: 600px;
+    padding: 25px;
+    border-radius: 10px;
+    top: 100px;
+    max-height: 100%;
+}
+
+.project-card-large {
+    position: absolute;
+    background-color: white;
+    width: 900px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.project-card-title {
+    margin-top: 0;
+    font-size: x-large;
+}
+
+.project-card-pic {
+    width: 600px; 
+    height: 400px;
+    object-fit: contain;
+}
+
+.project-card-pic-large {
+    width: 900px; 
+    height: 700px;
+    object-fit: contain;
+}
+
+.card-pic {
+    width: 400px; 
+    height: 300px;
+}
+
+.card-doc {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.project-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#contact {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+#contact p {
+    margin: 0;
+}
+
+.slideshow-arrow {
+    cursor: pointer;
+    color: black;
+    font-size: x-large;
+    font-weight: 800;
+    user-select: none;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshow-current {
+    margin: 0;
+}
+
+.email {
+    color: #ddddff;
+}
+
+#self-photo {
+    max-width: 40vh;
+}
+
+#self-desc {
+    font-size: x-large;
+    margin-left: 50px;
+    
+    max-width: 400px;
+}
+
+#about-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.fmedium {
+    font-size: 18px;
+}
