@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: #111111;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #fcc550bb;
+    background-color: #ffcc6d;
 }
 
 main {
@@ -43,6 +44,11 @@ nav {
     color: black;
     margin-right: 10px;
     padding: 10px;
+    font-size: 18px;
+}
+
+.link-large {
+    font-size: 32px;
 }
 
 .nav-link:hover {
@@ -149,6 +155,8 @@ nav {
     width: 900px;
     padding: 25px;
     border-radius: 10px;
+    top: 100px;
+    max-height: 100%;
 }
 
 .project-card-title {
@@ -200,7 +208,7 @@ footer {
 #contact {
     display: block;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     justify-content: center;
 }
 
@@ -228,6 +236,8 @@ footer {
 
 .email {
     color: #ddddff;
+    font-size: 24px;
+    margin-right: 0;
 }
 
 #self-photo {
@@ -260,4 +270,10 @@ footer {
 
 .fmedium {
     font-size: 18px;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        /*overflow: hidden;*/
+    }
 }
