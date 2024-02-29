@@ -272,8 +272,18 @@ footer {
     font-size: 18px;
 }
 
+/*Macbook & Large Laptop*/
+@media screen and (max-width: 1500px) {
+    
+}
+
+/*Normal Laptop*/
 @media screen and (max-width: 1200px) {
-    html {
-        /*overflow: hidden;*/
-    }
+    
+}
+
+/* TODO - set up mobile
+Mobile*/
+@media screen and (max-width: 600px) {
+    
 }
