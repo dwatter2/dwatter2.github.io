@@ -52,7 +52,7 @@ function startGame() {
     cover.className = "";
     buttonSubmitWord.hidden = false;
     buttonShuffle.hidden = false;
-    buttonStartGame.innerHTML = "End Game";
+    buttonStartGame.hidden = true;
     buttonStartGame.setAttribute("onclick", "endGame()");
 
     scoreDisplay.hidden = true;
@@ -75,7 +75,7 @@ function endGame() {
     //reset buttons
     buttonSubmitWord.hidden = true;
     buttonShuffle.hidden = true;
-    buttonStartGame.innerHTML = "Start Game";
+    buttonStartGame.hidden = false;
     buttonStartGame.setAttribute("onclick", "startGame()");
 
     //Add newgame to word list
