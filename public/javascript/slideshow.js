@@ -23,7 +23,6 @@ function slideNext() {
 function displaySlide(num) {
     let totalSlidesCurrent = document.getElementById("p" + slideGroup).getElementsByTagName("img");
     totalSlidesOverall[slideGroup-1].hidden = false;
-    console.log("group: " + slideGroup);
 
     if(totalSlidesCurrent.length > 1 && totalSlidesCurrent != null) {
         //overflow
