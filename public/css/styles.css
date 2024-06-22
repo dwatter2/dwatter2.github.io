@@ -363,4 +363,8 @@ Mobile*/
     #nav-drop {
         display: inline-block;
     }
+
+    .project-card p {
+        font-size: 1rem;
+    }
 }
