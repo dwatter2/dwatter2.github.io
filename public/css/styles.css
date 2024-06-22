@@ -249,7 +249,7 @@ footer {
 }
 
 #self-photo {
-    max-width: 40vh;
+    max-width: min(50vw, 40vh);
 }
 
 .round-pic {
@@ -262,7 +262,7 @@ footer {
 
 #self-desc {
     font-size: x-large;
-    margin-left: 50px;
+    margin-left: 5vw;
     
     max-width: 400px;
 }
