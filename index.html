@@ -7,6 +7,7 @@
         <title>Dylan Watters</title>
         <link rel="stylesheet" href="public/css/styles.css">
         <link rel="stylesheet" href="public/css/style-game.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     </head>
     <body>
         <header>
@@ -14,62 +15,34 @@
                 <a class="logo-link" href="index.html"><div class="site-logo">DW</div></a>
                 <h1><a href="index.html" class="nav-link link-large">Dylan Watters</a></h1>
             </div>
-            <nav>
+            <nav id="nav-main">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="about.html">About Me</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
+            <nav id="nav-drop">
+                <p id="dropdown-button" onclick="dropdown()">&#9776;</p>
+                <div id="dropdown-menu">
+                    <a class="drop-link" href="index.html">Home</a>
+                    <a class="drop-link" href="projects.html">Projects</a>
+                    <a class="drop-link" href="about.html">About Me</a>
+                    <a class="drop-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <script src="./public/javascript/mobile.js"></script>
         </header>
 
         <main>
             <div class="page-landing">
-                <h2 class="page-title">Welcome</h2>
-                <p class="page-title-desc">this is my site.</p>
+                <h2 class="page-title">Hello,</h2>
+                <p class="page-title-desc">I'm Dylan Watters.</p>
             </div>
-            <div id="game-holder">
-                <button id="game-interested" onclick="removeBlur()">Interested in a game?</button>
-                <div id="landing-game" class="game-blur">
-                    <div id="game-details">
-                        <h3 id="timer">30</h3>
-                        <h3 id="score">Score: 0</h3>
-                        <h3 class="line-bottom">Words</h3>
-                        <div id="words-list">
-                        </div>
-                    </div>
-
-                    <div id="game-content">
-                        <div id="game-header">
-                            <h4 id="best-score">Best: 0</h4>
-                            <button id="buttonSubmitWord" class="game-button" onclick="submitWord()" hidden>Submit</button>
-                            <h3 id="game-title">Lexicontest</h3>
-                            <button id="buttonShuffle" class="game-button" onclick="setKeys()" hidden>Shuffle</button>
-                            <h4 id="help" class="underline"><a href="#helper">Help?</a></h4>
-                        </div>
-                        <div class="game-page">
-                            <div id="game-letterboard">
-                            </div>
-                            <div id="game-buttons">
-                                <button id="buttonStartGame" class="game-button" onclick="startGame()" disabled>Start Game</button>
-                            </div>
-                            <h3 id="score-display" hidden></h3>
-                        </div>
-                    </div>
-                </div>
+            <div id="landing-icons">
+                <a href="https://www.linkedin.com/in/dylan-watters-037000252/"><button><i class="fa-brands fa-linkedin"></i></button></a>
+                <a href="https://github.com/dwatter2"><button><i class="fa-brands fa-github"></i></button></a>
+                <a href=""><button><i class="fa-brands fa-itch-io"></i></button></a>
             </div>
-
-            <div id="helper" class="project-popup">
-                <div class="project-card">
-                    <h3 class="project-card-title">How to Play</h3>
-                    <p>Piece together words using the letters provided. The longer the word the higher the score.</p>
-                    <p>Click the submit button to enter a word. The current entry will appear under the words section on the left.</p>
-                    <p>Clicking shuffle will replace all letters on the board.</p>
-                    <p>Only words appearing in the english dictionary will be considered valid submissons. No points will be rewarded for non-words or typos.</p>
-                    <p>There are only 30 seconds in each game.</p>
-                    <a href="#" class="project-close">x</a>
-                </div>
-            </div>
-            <script src="./public/javascript/landingGame.js"></script>
         </main>
 
         <footer>

@@ -13,18 +13,28 @@
                 <a class="logo-link" href="index.html"><div class="site-logo">DW</div></a>
                 <h1><a href="index.html" class="nav-link link-large">Dylan Watters</a></h1>
             </div>
-            <nav>
+            <nav id="nav-main">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="about.html">About Me</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
+            <nav id="nav-drop">
+                <p id="dropdown-button" onclick="dropdown()">&#9776;</p>
+                <div id="dropdown-menu">
+                    <a class="drop-link" href="index.html">Home</a>
+                    <a class="drop-link" href="projects.html">Projects</a>
+                    <a class="drop-link" href="about.html">About Me</a>
+                    <a class="drop-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <script src="./public/javascript/mobile.js"></script>
         </header>
 
         <main>
             <h2 class="page-title">About Me</h2>
             <div id="about-box">
-                <img alt="photograph of me" loading="eager" id="self-photo" src="./public/images/Photo-Of-Myself.jpg">
+                <img alt="picture of me" loading="eager" id="self-photo" class="round-pic" src="./public/images/Photo-Of-Myself2.jpeg">
                 <p id="self-desc">
                     Hi! My name is Dylan. I do software development.
                     <br><br>
