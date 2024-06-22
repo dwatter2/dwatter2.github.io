@@ -249,7 +249,7 @@ footer {
 }
 
 #self-photo {
-    max-width: min(50vw, 40vh);
+    max-width: min(30vw, 40vh);
 }
 
 .round-pic {
@@ -262,16 +262,9 @@ footer {
 
 #self-desc {
     font-size: x-large;
-    margin-left: 5vw;
-    
     max-width: 400px;
-}
-
-#about-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    margin: auto;
+    padding-top: 2vh;
 }
 
 #landing-icons {
