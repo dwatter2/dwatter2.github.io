@@ -6,8 +6,10 @@ for(let i = 0; i < totalSlidesOverall.length; i++) {
     totalSlidesOverall[i].hidden = true;
 }
 
-console.log(totalSlidesOverall);
+//testing
+//console.log(totalSlidesOverall);
 
+//Start By Displaying
 displaySlide(slideNum);
 
 function slideBack() {
@@ -21,9 +23,19 @@ function slideNext() {
 }
 
 function displaySlide(num) {
+    //Get number of pics in current slideshow by accessing p(1/2/etc) and getting imgs
     let totalSlidesCurrent = document.getElementById("p" + slideGroup).getElementsByTagName("img");
+    //unhide selected slide
     totalSlidesOverall[slideGroup-1].hidden = false;
 
+    //Get all notes in current slideshow
+    let totalNotesCurrent = document.getElementById("p" + slideGroup).getElementsByClassName("note");
+    //annotation if-block //Check current slide
+    for(let i = 0; i < totalSlidesCurrent.length; i++) {
+        totalNotesCurrent[i].style.display = "none";
+    }
+
+    //display if-block //Check if slideshow is valid
     if(totalSlidesCurrent.length > 1 && totalSlidesCurrent != null) {
         //overflow
         if(totalSlidesCurrent.length-1 < num)
@@ -39,6 +51,7 @@ function displaySlide(num) {
         //Set current to visible and set display number
         totalSlidesCurrent[slideNum].style.display = "block";
         document.getElementById("p" + slideGroup).querySelector(".slideshow-current").innerHTML = (slideNum + 1).toString() + "/" + totalSlidesCurrent.length.toString();
+        totalNotesCurrent[slideNum].style.display = "block";
     }
 }
 

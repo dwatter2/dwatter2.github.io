@@ -144,7 +144,7 @@ nav {
 
 .project-popup:target {
     visibility: visible;
-    opacity: .95;
+    opacity: 1;
 }
 
 .project-card {
@@ -181,7 +181,11 @@ nav {
 
 .project-card-title {
     margin-top: 0;
-    font-size: x-large;
+    font-size: 1.6rem;
+}
+
+.project-card p {
+    font-size: 1.2rem;
 }
 
 .card-pic {
@@ -262,7 +266,7 @@ footer {
 
 #self-desc {
     font-size: x-large;
-    max-width: 400px;
+    max-width: 70vw;
     margin: auto;
     padding-top: 2vh;
 }
