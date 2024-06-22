@@ -140,3 +140,11 @@
     position: relative;
     z-index: 1;
 }
+
+/* TODO - set up game for mobile
+Mobile*/
+@media screen and (max-width: 700px) {
+    #game-holder {
+        display: none;
+    }
+}
