@@ -249,7 +249,7 @@ footer {
 }
 
 #self-photo {
-    max-width: min(30vw, 40vh);
+    max-width: min(50vw, 40vh);
 }
 
 .round-pic {
