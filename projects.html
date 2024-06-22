@@ -13,12 +13,22 @@
                 <a class="logo-link" href="index.html"><div class="site-logo">DW</div></a>
                 <h1><a href="index.html" class="nav-link link-large">Dylan Watters</a></h1>
             </div>
-            <nav>
+            <nav id="nav-main">
                 <a class="nav-link" href="index.html">Home</a>
                 <a class="nav-link" href="projects.html">Projects</a>
                 <a class="nav-link" href="about.html">About Me</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
+            <nav id="nav-drop">
+                <p id="dropdown-button" onclick="dropdown()">&#9776;</p>
+                <div id="dropdown-menu">
+                    <a class="drop-link" href="index.html">Home</a>
+                    <a class="drop-link" href="projects.html">Projects</a>
+                    <a class="drop-link" href="about.html">About Me</a>
+                    <a class="drop-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <script src="./public/javascript/mobile.js"></script>
         </header>
 
         <main>
@@ -32,6 +42,9 @@
                 </div>
                 <div class="project">
                     <h3><a href="#p3" class="project-title">My Resume</a></h3>
+                </div>
+                <div class="project">
+                    <h3><a href="./game.html" class="project-title">...try out a game?</a></h3>
                 </div>
             </div>
             <!--Project Displays Here-->
