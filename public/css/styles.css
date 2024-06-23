@@ -101,6 +101,8 @@ nav {
 
 .page-landing {
     margin-top: 25vh;
+    position: relative;
+    z-index: 2;
 }
 
 .project-list {
@@ -275,6 +277,8 @@ footer {
     margin-top: 1.5vh;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 #landing-icons button {
@@ -304,6 +308,13 @@ footer {
 
 .fmedium {
     font-size: 18px;
+}
+
+.hello-word {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 1.6rem;
 }
 
 #nav-drop {
