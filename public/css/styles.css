@@ -132,9 +132,13 @@ footer {
 #landing-icons {
     margin-top: 1.5vh;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     position: relative;
     z-index: 2;
+    gap: 12px;
 }
 
 #landing-icons button {
