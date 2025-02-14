@@ -57,25 +57,38 @@ main {
 
 #projects {
     width: 100%;
-    display: block;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
-    color: linear-gradient(black, #ffffff);
+    background: linear-gradient(240deg, purple, orange);
+    text-align: start;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+}
+
+#project-title {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 32px;
 }
 
 #projects a {
     text-decoration: none;
-    color: black;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 5px;
+    margin: 2rem;
 }
 
 .project-banner {
-    min-width: 90vw;
-    height: 10vh;
+    min-width: 40%;
+    height: 250px;
     transition: 0.4s;
-    display: flex;
-    justify-content: space-between;
+    display: block;
     align-items: center;
+    justify-content: center;
     padding: 0 5vw;
-    border-top: 5px solid #111111;
 }
 
 .project-banner:hover {
