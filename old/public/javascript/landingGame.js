@@ -171,15 +171,20 @@ function createWordSpace() {
 }
 
 async function testWord(word, entry) {
-    const response = fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word);
-    const definition = await (await response).json();
+    const response = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word);
+    //const definition = await (await response).json();
 
-    if (definition.length > 0) {
-        entry.className = "list-word correct";
-        score += ((((word.length * word.length) + word.length) / 2) * 10);
-        totalScore.innerHTML = "Score: " + score;
-    } else {
-        entry.className = "list-word incorrect";
+    try {
+        if (response.ok) {
+            entry.className = "list-word correct";
+            score += ((((word.length * word.length) + word.length) / 2) * 10);
+            totalScore.innerHTML = "Score: " + score;
+        } else {
+            entry.className = "list-word incorrect";
+            throw new Error("Response Status: " + response.status);
+        }
+    } catch(error) {
+        
     }
 }
 
