@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal webpage by Dylan Watters">
+        <title>Dylan Watters</title>
+        <link rel="stylesheet" href="public/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-name">
+                <a class="logo-link" href="../index.html"><div class="site-logo">&larr;</div></a>
+                <h1><a href="index.html" class="nav-link link-large">Dylan Watters</a></h1>
+            </div>
+            <nav id="nav-main">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="about.html">About Me</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+            <nav id="nav-drop">
+                <p id="dropdown-button" onclick="dropdown()">&#9776;</p>
+                <div id="dropdown-menu">
+                    <a class="drop-link" href="index.html">Home</a>
+                    <a class="drop-link" href="projects.html">Projects</a>
+                    <a class="drop-link" href="about.html">About Me</a>
+                    <a class="drop-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <script src="./public/javascript/mobile.js"></script>
+        </header>
+
+        <main>
+            <h2 class="page-title">About Me</h2>
+            <div id="about-box">
+                <img alt="picture of me" loading="eager" id="self-photo" class="round-pic" src="./public/images/Photo-Of-Myself2.jpeg">
+                <p id="self-desc">
+                    Hi! My name is Dylan. I do software development.
+                    <br><br>
+                    I graduated from UNC Charlotte in December 2023.
+                    I majored in Computer Science with a concentration in Software, Systems, and
+                    Networks. 
+                    <br><br>
+                    I have a passion for creating that I aim to extend into my work
+                    by constantly learning and improving.
+                </p>
+            </div>
+        </main>
+
+        <footer>
+            <div id="contact">
+                <p>Contact Me: <a class="nav-link email" href="mailto:dylan.watters001@gmail.com">&#9993;</a></p>
+                <p>&#169;2024 Dylan Watters</p>
+            </div>
+        </footer>
+    </body>
+</html>

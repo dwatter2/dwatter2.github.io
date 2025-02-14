@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Personal webpage by Dylan Watters">
+        <title>Dylan Watters</title>
+        <link rel="stylesheet" href="public/css/styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="header-name">
+                <a class="logo-link" href="../index.html"><div class="site-logo">&larr;</div></a>
+                <h1><a href="index.html" class="nav-link link-large">Dylan Watters</a></h1>
+            </div>
+            <nav id="nav-main">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="projects.html">Projects</a>
+                <a class="nav-link" href="about.html">About Me</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </nav>
+            <nav id="nav-drop">
+                <p id="dropdown-button" onclick="dropdown()">&#9776;</p>
+                <div id="dropdown-menu">
+                    <a class="drop-link" href="index.html">Home</a>
+                    <a class="drop-link" href="projects.html">Projects</a>
+                    <a class="drop-link" href="about.html">About Me</a>
+                    <a class="drop-link" href="#contact">Contact</a>
+                </div>
+            </nav>
+            <script src="./public/javascript/mobile.js"></script>
+        </header>
+
+        <main>
+            <h2 class="page-title">My Works</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3><a href="#p1" class="project-title" onclick="setGroup(1)">Event Website Demo</a></h3>
+                </div>
+                <div class="project">
+                    <h3><a href="#p2" class="project-title" onclick="setGroup(2)">Derangement - Game Prototype</a></h3>
+                </div>
+                <div class="project">
+                    <h3><a href="./public/images/Dylan_Watters_Resume.pdf" target="_blank" class="project-title">My Resume</a></h3>
+                </div>
+                <div class="project">
+                    <h3><a href="./game.html" class="project-title">...try out a game?</a></h3>
+                </div>
+            </div>
+            <!--Project Displays Here-->
+            <div id="p1" class="project-popup">
+                <div class="project-card">
+                    <h3 class="project-card-title">Event Website Demo</h3>
+                    <div class="slideshow">
+                        <img alt="event website landing page" class="project-card-pic" src="./public/images/EventWebsitePic1.png" >
+                        <img alt="event website demo content" class="project-card-pic" src="./public/images/EventWebsitePic2.png">
+                        <img alt="mongoDB schema example" class="project-card-pic" src="./public/images/EventWebsitePic3.png">
+                        <div class="arrows">
+                            <a class="slideshow-arrow" onclick="slideBack()">&#60;</a>
+                            <p class="slideshow-current"></p>
+                            <a class="slideshow-arrow" onclick="slideNext()">&#62;</a>
+                        </div>
+                    </div>
+                    <p>A demonstrative website for event meetups. Functioning backend in NodeJS with minimalist frontend.</p>
+                    <p class="note">1. The website was created with a blog-style posting framework in mind. Users would need 
+                        to create an account to create posts under that username.</p>
+                    <p class="note">2. All posts are sumbitted via form and are connected to a database that populate the main page. 
+                        Posts are user-specific and can be edited and deleted at any time.</p>
+                    <p class="note">3. ex. MongoDB Schema example.</p>
+                    <a href="#" class="project-close">x</a>
+                </div>
+            </div>
+            <div id="p2" class="project-popup">
+                <div class="project-card">
+                    <h3 class="project-card-title">Derangement - Game Prototype</h3>
+                    <div class="slideshow">
+                        <img alt="game title screen" class="project-card-pic" src="./public/images/derangementPic3.jpg">
+                        <img alt="character with dialogue" class="project-card-pic" src="./public/images/derangementPic5.jpg">
+                        <img alt="game scenery" class="project-card-pic" src="./public/images/derangementPic4.jpg">
+                        <div class="arrows">
+                            <a class="slideshow-arrow" onclick="slideBack()">&#60;</a>
+                            <p class="slideshow-current"></p>
+                            <a class="slideshow-arrow" onclick="slideNext()">&#62;</a>
+                        </div>
+                    </div>
+                        <p>The game prototype I created in Unity 5 for Advanced Game Design and Development</p>
+                    <p class="note">1. For this project, I wanted to do something somewhat, 
+                        but not overtly, scary. The theme I settled on was a murder mystery set in a strange town. The design
+                        would incorporate mild horror elements to bring atmosphere to a Metroidvania-style RPG adventure game where the
+                        player could make choices that impacted the narrative and progression.</p>
+                    <p class="note">2. Most of the assets in this project were from publicly available resources (not without citing & mild tweaking). 
+                        I also wanted used 2d sprites for the character models to add surrealism.
+                        The dialogue function and interactivity was programmed from scratch and utilizes Unity's textbox interface 
+                        for simplicity.</p>
+                    <p class="note">3. Prior to creating the game, I developed a fully written story and game map that functioned as a 
+                        rough overview. This prototype serves as
+                        the opening area of the game, and has multiple environments such as the one shown here. I also 
+                        relied on Unity's rendering effects to create dark and foggy scenery, and created scene transitions
+                        such as moving from day to night.</p>
+                    <a href="#" class="project-close">x</a>
+                </div>
+            </div>
+            <div id="p3" class="project-popup">
+                <div class="project-card-large">
+                    <h3 class="project-card-title">My Resume</h3>
+                    <embed alt="my resume" class="project-card-pic-large" src="./public/images/Dylan-Watters-Resume2.pdf">
+                    <p></p>
+                    <a href="#" class="project-close">x</a>
+                </div>
+            </div>
+            <script src="./public/javascript/slideshow.js"></script>
+        </main>
+
+        <footer>
+            <div id="contact">
+                <p>Contact Me: <a class="nav-link email" href="mailto:dylan.watters001@gmail.com">&#9993;</a></p>
+                <p>&#169;2024 Dylan Watters</p>
+            </div>
+        </footer>
+    </body>
+</html>

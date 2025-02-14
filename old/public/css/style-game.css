@@ -1,0 +1,150 @@
+#landing-game {
+    background-color: #dddddd;
+    display: block;
+    margin: 25px auto;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    font-size: x-large;
+}
+
+#game-header {
+    display: flex;
+    background-color: white;
+    padding: 5px 0px;
+    height: 10%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#game-title {
+    margin: 0;
+}
+
+.game-page {
+    width: 100%;
+    height: 100%;
+}
+
+#game-content {
+    height: 100%;
+    width: 100%;
+}
+
+#game-details {
+    height: 100%;
+    min-width: 200px;
+    background-color: white;
+}
+
+#game-letterboard {
+    display: grid;
+    grid-template-columns: 133.3px 133.3px 133.3px 133.3px 133.3px 133.3px;
+}
+
+.game-letter {
+    padding: 16.667% 0px;
+    font-size: 50px;
+    background-color: #eeeeee;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.game-blur {
+    filter: blur(5px);
+    width: 900px;
+    height: 600px;
+    background-color: #cccccc;
+}
+
+.line-bottom {
+    border-bottom: solid black 1px;
+    margin-bottom: 0px;
+}
+
+#words-list {
+    background-color: #dddddd;
+    width: 190px;
+    border: solid white 5px;
+    min-height: 405px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#help {
+    min-width: 120px;
+    margin-right: 50px;
+}
+
+#help a {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#help a:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.list-word {
+    font-size: medium;
+    margin: 0px 0px 2px 0px;
+    border: solid 1px gray;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.game-button {
+    padding: 20px;
+    font-size: large;
+}
+
+.game-letter-selected {
+    padding: 16.6% 0px;
+    font-size: 50px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#game-buttons {
+    margin-top: 30px;
+}
+
+#best-score {
+    text-align: start;
+    min-width: 150px;
+    margin-left: 20px;
+}
+
+#game-interested {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    padding: 5px;
+}
+
+#game-holder {
+    position: relative;
+    z-index: 1;
+}
+
+/* TODO - set up game for mobile
+Mobile*/
+@media screen and (max-width: 700px) {
+    #game-holder {
+        display: none;
+    }
+}

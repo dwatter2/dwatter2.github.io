@@ -1,0 +1,381 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #111111;
+}
+
+body {
+    /*background-color: #f4a460;*/
+    color: black;
+    width: 100%;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffcc6d;
+}
+
+main {
+    /*background-color: #f8c366;*/
+    padding: 50px 0 20px 0;
+    margin-top: 50px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    background-color: #fffbf2;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.link-large {
+    font-size: 32px;
+}
+
+.nav-link:hover {
+    color: salmon;
+}
+
+.site-logo {
+    border: 2px solid black;
+    border-radius: 100px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    align-content: center;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.site-logo:hover {
+    background-color: black;
+    color: wheat;
+}
+
+.logo-link {
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin: 0 20px 0 20px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+}
+
+.logo-link:hover {
+    color: wheat;
+}
+
+.page-title {
+    font-size: 3.6rem;
+    margin: 0;
+}
+
+.page-title-desc {
+    display: inline;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.page-landing {
+    margin-top: 25vh;
+    position: relative;
+    z-index: 2;
+}
+
+.project-list {
+    margin-top: 15px;
+}
+
+.project {
+    padding: 5px;
+}
+
+.project-title {
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    padding: 10px;
+    transition: background-color 0.3s linear;
+}
+
+.project-title:hover {
+    background-color: #111111;
+}
+
+.project-popup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    transition: all 500ms;
+    z-index: 5;
+}
+
+.project-popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-card {
+    position: absolute;
+    background-color: white;
+    width: 70vw;
+    padding: 25px;
+    border-radius: 10px;
+    top: 100px;
+    max-height: 90vh;
+}
+
+.project-card-pic {
+    width: 70vw;
+    max-height: 50vh;
+    object-fit: contain;
+}
+
+.project-card-large {
+    position: absolute;
+    background-color: white;
+    width: 80vw;
+    padding: 25px;
+    border-radius: 10px;
+    top: 100px;
+    max-height: 90vh;
+}
+
+.project-card-pic-large {
+    width: 80vw;
+    height: 70vh;
+    object-fit: contain;
+}
+
+.project-card-title {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+}
+
+.card-pic {
+    width: 400px; 
+    height: 300px;
+}
+
+.card-doc {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.project-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+footer {
+    background-color: #111111;
+    color: white;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#contact {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#contact p {
+    margin: 0;
+}
+
+.slideshow-arrow {
+    cursor: pointer;
+    color: black;
+    font-size: x-large;
+    font-weight: 800;
+    user-select: none;
+}
+
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshow-current {
+    margin: 0;
+}
+
+.email {
+    color: #ddddff;
+    font-size: 24px;
+    margin-right: 0;
+}
+
+#self-photo {
+    max-width: min(50vw, 40vh);
+}
+
+.round-pic {
+    border-radius: 50%;
+}
+
+.big-pic {
+    max-width: 50vh;
+}
+
+#self-desc {
+    font-size: x-large;
+    max-width: 70vw;
+    margin: auto;
+    padding-top: 2vh;
+}
+
+#landing-icons {
+    margin-top: 1.5vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+#landing-icons button {
+    font-size: 48px;
+    border: 0.2px solid black;
+    padding: 10px 25px;
+    background-color: #fffbf2;
+    color: black;
+    cursor: pointer;
+    transition: color 0.8s ease, background-color 0.8s ease;
+}
+
+#landing-icons button:hover {
+    background-color: black;
+    color: white;
+}
+
+.header-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.fmedium {
+    font-size: 18px;
+}
+
+.hello-word {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 1.6rem;
+}
+
+#nav-drop {
+    display: none;
+    position: relative;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fffbf2;
+    right: 0;
+    min-width: 100px;
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#dropdown-menu a {
+    padding: 12px 10px 12px 0;
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+#dropdown-menu a:hover {
+    background-color: #d2ccbe;
+}
+
+#dropdown-button {
+    cursor: pointer;
+    color: gray;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    width: 28px;
+    margin: 0 16px 0 0;
+}
+
+/*Macbook & Large Laptop*/
+@media screen and (max-width: 1500px) {
+    
+}
+
+/*Normal Laptop*/
+@media screen and (max-width: 1200px) {
+    
+}
+
+/* TODO - set up mobile
+Mobile*/
+@media screen and (max-width: 700px) {
+    #nav-main {
+        display: none;
+    }
+
+    #nav-drop {
+        display: inline-block;
+    }
+
+    .project-card p {
+        font-size: 1rem;
+    }
+}
